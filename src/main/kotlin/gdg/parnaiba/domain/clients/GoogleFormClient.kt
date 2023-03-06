@@ -34,12 +34,12 @@ class GoogleFormClient {
         }
     }
 
-    fun readResponses(formId: String): ListFormResponsesResponse? {
+    fun getResponses(formId: String): ListFormResponsesResponse? {
         val token = getAccessToken()
-        return readResponses(formId, token)
+        return getResponses(formId, token)
     }
 
-    private fun readResponses(formId: String, token: String): ListFormResponsesResponse? {
+    private fun getResponses(formId: String, token: String): ListFormResponsesResponse? {
         return formsService!!.forms().responses().list(formId).setOauthToken(token).execute()
     }
 

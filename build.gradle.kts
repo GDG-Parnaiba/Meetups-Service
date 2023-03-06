@@ -23,7 +23,7 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-reflect:${kotlinVersion}")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:${kotlinVersion}")
 
-
+    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.12.1")
     implementation("com.google.apis:google-api-services-forms:v1-rev20220908-2.0.0")
     implementation("com.google.apis:google-api-services-drive:v3-rev197-1.25.0")
     implementation("com.google.api-client:google-api-client-jackson2:1.28.1")
